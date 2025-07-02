@@ -1,0 +1,87 @@
+# Root-level .gitignore for full-stack Laravel + Vue project
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Laravel vendor directory
+/vendor/
+
+# Laravel environment files
+.env
+.env.*.php
+
+# Laravel cache and logs
+/storage/*.key
+/storage/debugbar/*
+/storage/logs/*
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+
+# Laravel IDE helper files
+/_ide_helper.php
+/_ide_helper_models.php
+
+# Laravel Mix / Vite build files
+/public/hot
+/public/storage
+/public/mix-manifest.json
+/public/build/
+
+# Compiled class files
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Composer PHAR
+composer.phar
+
+# PHPUnit result cache
+.phpunit.result.cache
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Front-end build output
+/dist/
+/build/
+
+# Misc
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Ignore front-end environment files
+/front-end/.env
+/front-end/.env.local
+/front-end/.env.*.local
+
+# Ignore front-end node_modules (already ignored globally, but just in case)
+/front-end/node_modules/
+
+# Ignore back-end vendor (already ignored globally, but just in case)
+/back-end/vendor/
+
+# Ignore back-end storage logs and cache (already ignored globally, but just in case)
+/back-end/storage/logs/
+/back-end/storage/framework/cache/
+/back-end/storage/framework/sessions/
+/back-end/storage/framework/views/
