@@ -12,6 +12,7 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+
     /**
      * The attributes that are mass assignable.
      *
@@ -22,7 +23,13 @@ class User extends Authenticatable
         'email',
         'password',
     ];
-
+    
+    public function order(){
+        return $this->hasMany(Order::class);
+    }
+    public function address(){
+        return $this->hasMany(Address::class);
+    }
     /**
      * The attributes that should be hidden for serialization.
      *
